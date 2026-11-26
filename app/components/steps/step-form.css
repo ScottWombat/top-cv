@@ -1,0 +1,145 @@
+.step-title9{
+    font-family: 'Anton';
+    font-size:1rem;
+    letter-spacing: 2px;
+}
+.list-lbl{
+    font-family: 'Anton';
+    font-size:0.7rem;
+    letter-spacing: 1px;
+}
+
+.form-row-wrapper{
+    margin-top:20px;
+}
+.res-title{
+    font-family: 'Anton';
+}
+.lbl-title{
+    font-family: 'Anton';
+    letter-spacing: 2px;
+}
+.career-objectives-button{
+    font-family: 'Anton';
+    border: 3px solid rgba(0,0,0,0.1);
+    font-size:0.7rem;
+    padding:5px 10px 5px 25px;
+    width:200px;
+    letter-spacing: 2px;
+    background-color: #fff;
+}
+.career-objectives-button:hover{
+    border: 3px solid #ccc;
+    background-color:#d0d2dd;;
+    cursor: pointer; 
+}
+.professional-summary-button{
+    font-family: 'Anton';
+    border: 3px solid rgba(0,0,0,0.1);
+    font-size:0.7rem;
+    padding:5px 10px 5px 10px;
+    width:205px;
+    float:left;
+    letter-spacing: 2px;
+    background-color: #fff;
+}
+.professional-summary-button:hover{
+     border: 3px solid #ccc;
+    background-color:#d0d2dd;
+    cursor: pointer; 
+}
+.addskills-btn{
+    /*padding:10px 30px 10px 30px;*/
+    font-family: 'Anton';
+    width:30%;
+    font-size:0.8rem;
+    letter-spacing: 1px;
+}
+.addskills-btn:hover{
+    background-color: #fff;
+    border:2px solid rgba(60,60,60,0.5);
+}
+
+.empty_row{
+    line-height:10px;
+}
+.objectives_list{
+    width:100%;
+    background-color: aqua;
+}
+
+.tiny-square {
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+}
+.button-wrapper1{
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.reset-button{
+    font-family: 'Anton';
+    border: 3px solid rgba(0,0,0,0.1);
+    font-size:0.7rem;
+    padding:5px 10px 5px 10px;
+    width:180px;
+    text-align:center;
+    float:right;
+    letter-spacing: 2px;
+    background-color: #fff;
+    
+}
+.reset-button:hover{
+    border: 3px solid #ccc;
+    background-color:#d0d2dd;
+    cursor: pointer; 
+}
+.error-msg1{
+    color:#ff0000;
+    font-family:'Poppins';
+    font-size:0.6rem;
+    font-weight:600;
+    letter-spacing: 2px;
+    float:right;
+}
+.asterick1{
+    color:rgba(255,0,0,0.8);/*#ff0000*/
+    font-family:'Poppins';
+    font-size:1rem;
+    font-weight:600;
+    margin-top:-5px;
+}
+.input-field_current{
+    width:100%;
+    line-height: 20px;
+    border:0;
+    padding: 5px 5px 5px 15px;
+    font-family: 'Anton';
+    color: rgba(0,0,0,0.7);
+    border:1px solid rgba(0,0,0,0.5);
+}
+.input-field_current:focus{
+    border:1px solid rgba(0,0,0,0.6);
+    background-color: #fff;
+    outline: none; 
+  
+}
+.input-field1{
+    width:50%;
+    line-height: 20px;
+    border:0;
+    padding: 5px 5px 5px 15px;
+    font-family: 'Anton';
+    color: rgba(0,0,0,0.7);
+    border:1px solid rgba(0,0,0,0.5);
+}
+.input-field:focus1{
+    border:1px solid rgba(0,0,0,0.6);
+    background-color: #fff;
+    outline: none; 
+}
+.lbl-wrapper{
+    width:50%;
+}

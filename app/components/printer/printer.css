@@ -1,0 +1,115 @@
+button.print_button {
+  width: 50px;
+  height: 50px;
+}
+span.print_icon, span.print_icon::before, span.print_icon::after, button.print_button:hover .print_icon::after {
+  border: solid 2px #333;
+}
+span.print_icon::after {
+  border-width: 1px;
+}
+
+button.print_button {
+  position: relative;
+  padding: 0;
+  border: 0;
+  
+  border: none;
+  background: transparent;
+}
+
+span.print_icon, span.print_icon::before, span.print_icon::after, button.print_button:hover .print_icon::after {
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+span.print_icon {
+  position: relative;
+  display: inline-block;  
+  padding: 0;
+  margin-top: 20%;
+
+  width: 60%;
+  height: 35%;
+  background: #fff;
+  border-radius: 20% 20% 0 0;
+}
+
+span.print_icon::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 12%;
+  right: 12%;
+  height: 110%;
+
+  transition: height .2s .15s;
+}
+
+span.print_icon::after {
+  content: "";
+  position: absolute;
+  top: 55%;
+  left: 12%;
+  right: 12%;
+  height: 0%;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-size: 70% 90%;
+  background-position: center;
+  background-image: linear-gradient(
+    to top,
+    #fff 0, #fff 14%,
+    #333 14%, #333 28%,
+    #fff 28%, #fff 42%,
+    #333 42%, #333 56%,
+    #fff 56%, #fff 70%,
+    #333 70%, #333 84%,
+    #fff 84%, #fff 100%
+  );
+
+  transition: height .2s, border-width 0s .2s, width 0s .2s;
+}
+
+button.print_button:hover {
+  cursor: pointer;
+}
+
+button.print_button:hover .print_icon::before {
+  height:0px;
+  transition: height .2s;
+}
+button.print_button:hover .print_icon::after {
+  height:120%;
+  transition: height .2s .15s, border-width 0s .16s;
+}
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 4px;
+  font-size: 13px;
+  white-space: nowrap;
+  color: #ffffff;
+  background-color: #1f2937;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1f2937 transparent transparent transparent;
+}
+button.print_button:hover .tooltip{
+  opacity: 1;
+  visibility: visible;
+}

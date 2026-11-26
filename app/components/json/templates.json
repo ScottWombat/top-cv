@@ -1,0 +1,4 @@
+[
+    {"id": 1,"name":"template1","imageRequired": true,"style":"abstract"},
+    {"id": 2,"name":"template2","imageRequired": false,"style":"classic"}
+]

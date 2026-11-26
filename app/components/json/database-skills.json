@@ -1,0 +1,12 @@
+[
+    {"id": 1,"name":"DB2","checked": false},
+    {"id": 2,"name":"MarianDB","checked": false},
+    {"id": 3,"name":"Microsoft SQL","checked": false},
+    {"id": 4,"name":"MarianDB","checked": false},
+    {"id": 5,"name":"MySQL","checked": false},
+    {"id": 6,"name":"Oracle","checked": false},
+    {"id": 7,"name":"PostgreSQL","checked": false},
+    {"id": 8,"name":"Redis","checked": false},
+    {"id": 9,"name":"SQLite","checked": false},
+    {"id": 100,"name":"Other Database Skill","checked": false}
+]

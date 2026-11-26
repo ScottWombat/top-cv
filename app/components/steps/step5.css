@@ -1,0 +1,85 @@
+/*
+.more-btn{
+    width:100%;
+    font-family: 'Anton';
+}
+.more-btn:hover{
+    background-color: #fff;
+    border:3px solid rgba(60,60,60,0.5);
+}
+    */
+.step5-container{
+    width: 100%;
+    margin-top: 10px;
+}
+.step5-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top:10px;
+    position:relative;
+}
+.step5-topic-wrapper{
+    display:flex;
+    justify-content: space-between;
+}
+.step5-topic-error{
+    float:right;
+}
+.step5-topic{
+    font-family: 'Anton';
+    font-size:0.8rem;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+.step5-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top:0px;
+    
+}
+
+/* Step 2 */
+.frm-textarea{
+  width: 100%;
+  height: 150px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: #fff;
+  font-family: 'Anton';
+  font-size: 0.7rem;
+  resize: none;
+  letter-spacing: 2px;
+  /*font-family:'Anton';*/
+}
+.frm-textarea:focus{
+     outline: none;
+     /*
+     border-color:#FCA40D;
+     box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.15);
+     */
+}
+
+.error1-msg{
+   
+    font-family:'Poppins';
+    font-size:0.6rem;
+    font-weight:600;
+    letter-spacing: 2px;
+    float:right;
+    margin-top:5px;
+}
+.green1-msg{
+    color:rgb(2, 133, 2);
+    font-family:'Poppins';
+    font-size:1rem;
+    font-weight:600;
+    letter-spacing: 2px;
+    float:right;
+    margin-top:5px;
+}

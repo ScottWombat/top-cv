@@ -1,0 +1,21 @@
+[
+    {"id": 1,"name":"Adobe Creative Suite","checked": false},
+    {"id": 2,"name":"Asset Management","checked": false},
+    {"id": 3,"name":"Cloud Computing","checked": false},
+    {"id": 4,"name":"Data Entry","checked": false},
+    {"id": 5,"name":"Data Analytics","checked": false},
+    {"id": 6,"name":"Digital Illustration","checked": false},
+    {"id": 7,"name":"Financial Documentation","checked": false},
+    {"id": 8,"name":"Google Analytic","checked": false},
+    {"id": 9,"name":"Microsoft Suite","checked": false},
+    {"id": 10,"name":"Networking","checked": false},
+    {"id": 11,"name":"Operating System","checked": false},
+    {"id": 12,"name":"Photography","checked": false},
+    {"id": 13,"name":"Reporting","checked": false},
+    {"id": 14,"name":"Research","checked": false},
+    {"id": 15,"name":"Rish Management","checked": false},
+    {"id": 16,"name":"Social Media","checked": false},
+    {"id": 17,"name":"Technical Writing","checked": false},
+    {"id": 18,"name":"UX/Ui Design","checked": false},
+    {"id": 100,"name":"Other Technical Skill","checked": false}
+]

@@ -1,0 +1,28 @@
+[
+    {"id": 1,"name":"Accurate","checked": false},
+    {"id": 2,"name":"Attention to detail","checked": false},
+    {"id": 3,"name":"Commitment","checked": false},
+    {"id": 4,"name":"Creativity","checked": false},
+    {"id": 5,"name":"Critical thinking","checked": false},
+    {"id": 6,"name":"Decision making","checked": false},
+    {"id": 7,"name":"Disipline","checked": false},
+    {"id": 8,"name":"Eager to learn","checked": false},
+    {"id": 9,"name":"Enthusiasm","checked": false},
+    {"id": 10,"name":"Flexibility","checked": false},
+    {"id": 11,"name":"Hard working","checked": false},
+    {"id": 12,"name":"Leadership","checked": false},
+    {"id": 13,"name":"Multitasking","checked": false},
+    {"id": 14,"name":"Problem-solving","checked": false},
+    {"id": 15,"name":"Professionalism","checked": false},
+    {"id": 16,"name":"Reliable","checked": false},
+    {"id": 17,"name":"Self-motivated","checked": false},
+    {"id": 18,"name":"Strong communication","checked": false},
+    {"id": 19,"name":"Taking initiative","checked": false},
+    {"id": 20,"name":"Team work","checked": false},
+    {"id": 21,"name":"Time management","checked": false},
+    {"id": 22,"name":"Working collaboratively","checked": false},
+    {"id": 23,"name":"Working independently","checked": false},
+    {"id": 24,"name":"Working under presure","checked": false},
+    {"id": 100,"name":"Other Personal Skill","checked": false}
+]
+

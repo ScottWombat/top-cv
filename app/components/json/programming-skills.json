@@ -1,0 +1,16 @@
+[
+    {"id": 1,"name":"AngularJS","checked": false},
+    {"id": 2,"name":"C++","checked": false},
+    {"id": 3,"name":"C#","checked": false},
+    {"id": 4,"name":"CSS","checked": false},
+    {"id": 5,"name":"HTML","checked": false},
+    {"id": 6,"name":"Go","checked": false},
+    {"id": 7,"name":"Java","checked": false},
+    {"id": 8,"name":"JavaScript","checked": false},
+    {"id": 9,"name":"PHP","checked": false},
+    {"id": 10,"name":"ReactJS","checked": false},
+    {"id": 11,"name":"Swift","checked": false},
+    {"id": 12,"name":"TypeScript","checked": false},
+    {"id": 13,"name":"R","checked": false},
+    {"id": 100,"name":"Other Programming Skill","checked": false}
+]

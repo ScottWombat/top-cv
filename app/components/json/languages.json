@@ -1,0 +1,15 @@
+[
+    {"id":1,"name": "English", "checked": false }, 
+    {"id":2, "name": "Chinese", "checked": false }, 
+    {"id":3,"name": "Arabic", "checked": false },
+    {"id":4, "name": "Spanish", "checked": false }, 
+    {"id":5, "name": "Japanese", "checked": false }, 
+    {"id":6, "name": "Hindi", "checked": false },
+    {"id":7, "name": "French", "checked": false }, 
+    {"id":8, "name": "Russian", "checked": false }, 
+    {"id":9,"name": "Korean", "checked": false },
+    {"id":10, "name": "German", "checked": false }, 
+    {"id":11, "name": "Italian", "checked": false }, 
+    {"id":12, "name": "Thai", "checked": false },
+    {"id":100, "name": "Other", "checked": false }
+]

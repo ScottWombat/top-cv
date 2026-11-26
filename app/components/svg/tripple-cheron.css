@@ -1,0 +1,83 @@
+:root {
+  /* 1 = True (Active), 0 = False (Inactive) */
+  --is-black: true; 
+  --primary: #ccc;
+  --second: red;
+
+}
+
+.cheron_wrapper {
+  position: relative;
+  margin: 10px auto;
+  display: block;
+  
+  svg {
+    display: block;
+    margin: 10 auto;
+    /*width: 100%;*/
+    height: auto;
+    max-width: 184px;
+    aspect-ratio: 184 / 40;
+    filter: drop-shadow(0 2px 4px rgba(0 0 0 / .15));
+    background-color: blue;
+    margin-top: -10px;
+  }
+}
+
+.cheron_wrapper:hover .logo-chevron {
+    animation: .75s switch linear infinite;
+}
+
+.logo-title,
+.logo-subtitle {
+  fill: white;
+}
+.logo-chevron:nth-child(1) {
+  fill: var(--primary);
+  --first: var(--primary);
+  --second: rgb(255, 255, 255);
+}
+.logo-chevron:nth-child(2) {
+  fill: var(--primary);
+  --first: var(--primary);
+  --second: white;
+  animation-delay: .1563s !important;
+}
+.logo-chevron:nth-child(3) {
+  fill: red;
+  --first: red;
+  --second: blue;
+}
+
+
+/* black */
+.cheron_wrapper--is-black .logo-title,
+.cheron_wrapper--is-black .logo-subtitle {
+  fill: black;
+}
+.cheron_wrapper--is-black .logo-chevron:nth-child(1) {
+  fill: var(--primary);
+  --first: var(--primary);
+  --second: black;
+}
+.cheron_wrapper--is-black .logo-chevron:nth-child(2) {
+  fill: var(--primary);
+  --first: var(--primary);;
+  --second: black;
+  animation-delay: .1563s !important;
+}
+.cheron_wrapper--is-black .logo-chevron:nth-child(3) {
+  fill: black;
+  --first: black;
+  --second: var(--primary);
+}
+
+
+@keyframes switch {
+  0%, 100% {
+    fill: black;
+  }
+  50% {
+    fill: greenyellow;
+  }
+}
