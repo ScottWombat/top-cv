@@ -90,7 +90,7 @@ const StepIndicator = (props) => {
             </div>
             <div className={step4}>
                 <div className="step-circle"></div>
-                <div className="step-label">Objective</div>
+                <div className="step-label">Objectives</div>
             </div>
             <div className={step5}>
                 <div className="step-circle"></div>
