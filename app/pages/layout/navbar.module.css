@@ -1,0 +1,31 @@
+.customLink {
+    color:brown;
+}
+.navbar{
+    font-family: 'Anton';
+    font-size: 2em;
+    color:black;
+}
+.navbar a{
+    text-decoration: none;
+    color: #333;
+}
+.navbar a:hover {
+  color: orange;
+ 
+
+}
+.navbar a.active {
+  color: red;
+  font-weight: bold;
+  border-bottom: 2px solid orange;
+}
+
+.listStyle{
+     display: flex;  
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    gap:1em;
+}
