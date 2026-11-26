@@ -1,10 +1,8 @@
-//import './step.css';
-//import '~/components/css/master.css';
+
 import './step5.css';
-import { useEffect, useRef, useState, useImperativeHandle } from 'react';
+import { useRef, useState, useImperativeHandle } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch } from '~/store/index';
-import { useAppSelector } from '~/store/hooks';
 import { actions} from '~/store/cv-reducer'
 import { GreenMsg,RedMsg } from '../message';
 import { validateStep5Form } from './step5-validate';
@@ -13,17 +11,14 @@ export enum Step5State {
     Idle = "IDLE", Valid = "VALID", Invalid = "INVALID"
 }
 
-
 const Step5 = (props) => {
     const responsibilitesRef = useRef(null);
     const dispatch = useDispatch<AppDispatch>();
     const [addOrMore, setAddOrMore] = useState("Add Your Experience")
-    const [moreExperience, setMoreExperice] = useState(1);
+ 
     const initFormData = { position: '', company: '', startYear: '', endYear: '', duty: '', location: '' };
     const [formData, setFormData] = useState(initFormData)
-    const [errors, setErrors] = useState({});
     
-
     const [positionState, setPositionState] = useState<Step5State>(Step5State.Idle);
     const [companyState, setCompanyState] = useState<Step5State>(Step5State.Idle);
     const [startYearState, setStartYearState] = useState<Step5State>(Step5State.Idle);
@@ -47,46 +42,15 @@ const Step5 = (props) => {
     const onStep5ExperienceErrMessage = (v) => {
         setStep5Required("Experience is required")
     }    
-    /*
-     const [row,setRow ] = useState(0)
-     const moreOnClick= (e) =>{
-          setMoreExperice(moreExperience+ 1)
-          setRow(row +1)
-     }
-     const addExperience1 =(e)=>{
-         e.preventDefault();
-         dispatch(actions.addExperience({ id: 1, company: 'd', startYear: 'dd',endYear:'d',position:'d',responsibility:'ffff' }))
-         
-     }
-     */
     const handleChange = (e) => {
-       // alert("E")
         const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
        
-           setFormData({ ...formData, [name]: value });
-       
-        /*
-        let {msg,status} =validateStep5Form(name,value)
-         console.log(name +":" +msg+":"+status)
-         if (name === 'company') {
-            setCompanyMsg(msg)
-            setCompanyState(status)
-         }
-        */
     }
 
     const handleBlur = (e) => {
-        //alert("Eo")
+        
         const { name, value } = e.target;
-        /*
-        if(name === 'duty'){
-            const lines = value.split(/\r?\n/);
-            const newA = lines.filter(item => item.trim() !== "")
-            setFormData({ ...formData, duty: newA});
-        }else{
-             setFormData({ ...formData, [name]: value });
-        }
-        */
         let {msg,status} =validateStep5Form(name,value)
          console.log(name +":" +msg+":"+status)
          if (name === 'company') {
@@ -115,7 +79,6 @@ const Step5 = (props) => {
     const addExperience = (e) => {
         e.preventDefault();
    
-        
         if(companyState === Step5State.Valid &&
            positionState === Step5State.Valid &&
            locationState === Step5State.Valid &&
@@ -146,26 +109,7 @@ const Step5 = (props) => {
                 setDutyState(Step5State.Idle)
                 setStep5Required("")
            }
-
         }
-           
-                  
-        
-        
-    
-        //if (formValidation) {
-        //dispatch(actions.addExperience(formData))
-        //setFormData(initFormData);
-        //}
-
-        /*
-        const { name, value } = e.target;
-        
-        const lines = value.split(/\r?\n/); 
-        const newA = lines.filter(item => item.trim() !== "")
-      
-        dispatch(actions.addExperience({ id: 1, company: 'NVIDIA', startYear: 'Jan 2026',endYear:'Current',position:'Data Scientist',responsibility:newA}))
-       */
     }
     const resetDuties = (e) => {
         dispatch(actions.resetDuties());
@@ -273,22 +217,6 @@ const Step5 = (props) => {
             </div>
         </div>
     )
-    {/*}
-       <div className='step-container'>
-       {Array.from({length: moreExperience},(_,index) => (
-            <div>
-            <div className='sub-step-title'>
-            Your Experiences:</div>
-            <ExperienceWrapper index={index} row={row}/>
-            <div className="empty-row">&nbsp;</div>
-            <Responsibilty index={index}/>
-            </div>
-        ))}
-        <button onClick={moreOnClick} className='more-btn'>Add More Experience</button>
-        </div>
-        */}
-
-
 }
 
 export default Step5; 
